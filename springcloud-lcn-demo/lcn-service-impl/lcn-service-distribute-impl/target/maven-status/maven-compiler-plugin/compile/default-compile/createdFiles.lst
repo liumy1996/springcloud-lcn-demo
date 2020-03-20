@@ -1,0 +1,4 @@
+com/liumy/distribute/impl/entity/DispatchEntity.class
+com/liumy/distribute/DistributeApp.class
+com/liumy/distribute/impl/service/DispatchService.class
+com/liumy/distribute/impl/mapper/DispatchMapper.class

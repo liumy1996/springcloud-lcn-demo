@@ -1,0 +1,32 @@
+spring:
+  application:
+    ###服务的名称
+    name: lcn-order
+  datasource:
+    url: jdbc:mysql://localhost:3306/order?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: 127.0.0.1:8848
+    refresh:
+      refreshable: none
+#feign超时时间设置
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
+
+# 8090 8091 8092 ... 订单相关集群
+server:
+  port: 8090
+  tomcat:
+    max-threads: 20
+
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+  logger:
+    enabled: true

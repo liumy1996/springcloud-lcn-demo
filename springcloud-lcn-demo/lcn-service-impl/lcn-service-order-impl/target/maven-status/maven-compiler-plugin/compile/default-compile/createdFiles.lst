@@ -1,0 +1,5 @@
+com/liumy/order/entity/OrderEntity.class
+com/liumy/order/service/impl/OrderServiceImpl.class
+com/liumy/order/mapper/OrderMapper.class
+com/liumy/order/OrderApp.class
+com/liumy/order/service/feign/DistributeServiceFeign.class

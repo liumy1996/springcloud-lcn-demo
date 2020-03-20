@@ -1,0 +1,24 @@
+spring:
+  application:
+    ###服务的名称
+    name: lcn-distribute
+  datasource:
+    url: jdbc:mysql://localhost:3306/distribute_order?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        ###nacos注册地址
+        server-addr: 127.0.0.1:8848
+    refresh:
+      refreshable: none
+server:
+  port: 8030
+
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+  logger:
+    enabled: true
